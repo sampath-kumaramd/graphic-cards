@@ -79,7 +79,10 @@ export default function Home() {
         <div>Laatste update vandaag 25/05/2024</div>
       </div>
       <div className="text-3xl  font-bold">Laatste dalingen</div>
-      <div className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8">
+      <div
+        // className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
+        className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
+      >
         {products.map((product, index) => (
           <>
             {index !== 5 && (
