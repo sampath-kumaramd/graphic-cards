@@ -18,7 +18,6 @@ import { MoveUpRight, Truck } from 'lucide-react'
 
 
 type Props = {
-    id: number,
     image: string,
     brand: string,
     name?: string,
@@ -28,13 +27,11 @@ type Props = {
     discount?: number,
     deliveryTime?: string,
     isLastDrop?: boolean,
-    isLowestPrice?: boolean,
     showType?: ProductCardShow,
-    isFavorite?: boolean,
     className?: string
 }
 
-function ProductCard({ id, image, brand, name, size, description, price, discount, deliveryTime, isLastDrop, isLowestPrice, showType, isFavorite, className, }: Props) {
+function ProductCard({ image, brand, name, size, description, price, discount, deliveryTime, isLastDrop, showType, className, }: Props) {
     return (
         <>
             <Card className={className + ' ' + 'rounded-3xl w-72'} >
