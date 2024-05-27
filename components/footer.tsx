@@ -73,6 +73,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="flex xl:hidden">
       <Accordion type="single" collapsible className="w-10/12 mx-auto">
         <AccordionItem value="item-1">
           <AccordionTrigger>Merken</AccordionTrigger>
@@ -131,6 +132,7 @@ function Footer() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      </div>
     </div>
   );
 }
