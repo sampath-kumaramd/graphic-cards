@@ -10,17 +10,17 @@ export default function BrandPage() {
         <div className="max-w-screen-2xl 2xl:mx-auto mx-8 py-12 min-h-screen">
             <div className=" font-bold text-3xl">{'BRAND'} grafische kaarten  </div>
 
-            <div className='grid justify-between grid-cols-12 gap-8 mt-8 mb-16'>
-                <div className=" col-span-3">
-                    <Card className=" rounded-3xl">
-                        <CardContent className=" flex justify-center items-center h-60">
+            <div className='xl:grid justify-between xl:grid-cols-12 gap-8 mt-8 xl:mb-16 mb-24 xl:h-60 flex flex-col' >
+                <div className="col-span-3 h-full">
+                    <Card className="rounded-3xl h-full">
+                        <CardContent className="flex justify-center items-center h-full ">
                             <Image src={MSIBrand} alt='favicon' width={250} height={250} />
                         </CardContent>
                     </Card>
                 </div>
-                <div className=' col-span-9'>
-                    <Card className=" rounded-3xl">
-                        <CardContent className=" flex justify-start items-start flex-col h-60">
+                <div className='col-span-9 h-full'>
+                    <Card className="rounded-3xl h-full">
+                        <CardContent className="flex justify-start items-start flex-col h-full">
                             <div className="mt-8 font-bold text-xl">{'BRAND'} Grafische kaarten</div>
                             <div>MSI, een toonaangevend merk in de wereld van gaming en computerhardware,
                                 staat bekend om zijn hoogwaardige grafische kaarten. Deze kaarten, ontworpen
