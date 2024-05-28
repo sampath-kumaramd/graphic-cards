@@ -49,14 +49,16 @@ export default function Home() {
 
       <div className="flex justify-between mt-32 mb-16">
         <div className=" font-bold text-3xl">Populaire merken</div>
-        <Card>
-          <CardContent className=" p-2 px-4 flex items-center">
-            <div className=" flex justify-start gap-2 items-center">
-              <Eye />
-              <div className=" font-bold md:text-base text-sm">Alle merken bekijken</div>
-            </div>
-          </CardContent>
-        </Card>
+        <button onClick={()=> router.push('./fav-brand') }>
+          <Card>
+            <CardContent className=" p-2 px-4 flex items-center">
+              <div className=" flex justify-start gap-2 items-center">
+                <Eye />
+                <div className=" font-bold md:text-base text-sm">Alle merken bekijken</div>
+              </div>
+            </CardContent>
+          </Card>
+        </button>
       </div>
       <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center">
         {brands.map((brand) => (
