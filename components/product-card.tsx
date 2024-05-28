@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -18,6 +19,7 @@ import { MoveUpRight, Truck } from 'lucide-react'
 
 
 type Props = {
+    id: number
     image: string,
     brand: string,
     name?: string,
@@ -29,9 +31,11 @@ type Props = {
     isLastDrop?: boolean,
     showType?: ProductCardShow,
     className?: string
+    link?: string
 }
 
-function ProductCard({ image, brand, name, size, description, price, discount, deliveryTime, isLastDrop, showType, className, }: Props) {
+function ProductCard({ id, image, brand, name, size, description, price, discount, deliveryTime, isLastDrop, showType, className, link }: Props) {
+    const router = useRouter()
     return (
         <>
             <Card className={className + ' ' + 'rounded-3xl w-72'} >
@@ -50,9 +54,9 @@ function ProductCard({ image, brand, name, size, description, price, discount, d
 
                     <div>
                         {showType === ProductCardShow.mini ? (
-                            <div className='text-center text-xl font-bold my-4'>
+                            <button className='mx-auto text-center text-xl font-bold my-4 w-full' onClick={() => router.push(`brands/${id}`)}>
                                 {brand}
-                            </div>
+                            </button>
                         ) : (
                             <>
                                 <div className='text-left text-xl font-bold mt-1 mb-4'>

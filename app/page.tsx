@@ -1,5 +1,5 @@
+"use client";
 import ProductCard from "@/components/product-card";
-
 import { Question, WhyGraphicCards } from "@/bin/questions";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,10 +14,11 @@ import { ProductCardShow } from "@/lib/enums/product-card-show";
 import BlanckCard from "@/components/blanck-card";
 import { Card, CardContent } from "@/components/ui/card";
 import { Eye } from "lucide-react";
-import { products } from "@/bin/products";
-import { brands } from "@/bin/brands";
+import { useRouter } from "next/navigation";
+import { brands, products } from "@/bin/home-page";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="max-w-screen-2xl 2xl:mx-auto mx-8 py-12">
       {/* top frame */}
@@ -60,6 +61,7 @@ export default function Home() {
       <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center">
         {brands.map((brand) => (
           <ProductCard
+            id={brand.id}
             key={brand.id}
             image={brand.image}
             brand={brand.brand}
@@ -88,6 +90,7 @@ export default function Home() {
             {index !== 5 && (
               <ProductCard
                 key={product.id}
+                id={product.id}
                 image={product.image}
                 brand={product.brand}
                 name={product.name}

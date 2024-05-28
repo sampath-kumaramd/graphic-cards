@@ -11,6 +11,8 @@ import {
 
 import { MerkenItems, SeriesItems, WinkelsItems, AppItems, Item } from "@/bin/footer-items";
 import Link from "next/link";
+import logo from '../public/icons/logo.svg'
+
 
 function Footer() {
   return (
@@ -18,7 +20,7 @@ function Footer() {
       <div className="max-w-screen-2xl 2xl:mx-auto mx-8 flex py-12 h-auto justify-between items-start">
         <div className="flex items-center gap-5">
           <div className="flex justify-center w-16 h-16 bg-white rounded-xl p-2">
-            <Image src="./icons/logo.svg" alt="logo" width={24} height={24} />
+            <Image src={logo.src} alt="logo" width={24} height={24} />
           </div>
           <div className="text-3xl font-bold">Grafischekaart.nl</div>
         </div>
@@ -74,7 +76,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex xl:hidden">
-      <Accordion type="single" collapsible className="w-10/12 mx-auto">
+      <Accordion type="single" collapsible className="w-10/12 mx-auto mb-16">
         <AccordionItem value="item-1">
           <AccordionTrigger>Merken</AccordionTrigger>
           <AccordionContent>

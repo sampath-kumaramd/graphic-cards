@@ -16,6 +16,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import logo from '../public/icons/logo.svg'
+import search from '../public/icons/search.svg'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,7 @@ const Header = () => {
     <nav>
       <div className="max-w-screen-2xl 2xl:mx-auto  mx-8 flex items-center justify-between py-5">
         <div className="flex items-center gap-3">
-          <Image src="./icons/logo.svg" alt="logo" width={20} height={20} />
+          <Image src={logo.src} alt="logo" width={20} height={20} />
           <div className="font-bold text-2xl">Grafischekaart.nl</div>
         </div>
         <div className="hidden xl:flex 2xl:gap-12  gap-8 font-semibold text-gray-600 text-lg">
@@ -36,7 +38,7 @@ const Header = () => {
         </div>
         <div >
           <div className="hidden xl:flex border border-gray-400 rounded-full w-full h-auto py-2 px-3 items-center gap-3">
-            <Image src="./icons/search.svg" alt="logo" width={15} height={15} />
+            <Image src={search} alt="logo" width={15} height={15} />
             <input
               placeholder="Zoeken naar grafische kaarten"
               className="focus:outline-none mr-10"

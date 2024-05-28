@@ -1,4 +1,34 @@
-import image from '../public/RTX.jpeg'
+import brandImage from '../public/RTX.jpeg'
+import productImage from '../public/RTX.jpeg'
+
+interface Brands {
+    id: number;
+    image: string;
+    brand: string;
+}
+export const brands: Brands[] = [
+    {
+        id: 1,
+        image: brandImage.src,
+        brand: 'MSI',
+    },
+    {
+        id: 2,
+        image: brandImage.src,
+        brand: 'MSI',
+    },
+    {
+        id: 3,
+        image: brandImage.src,
+        brand: 'MSI',
+    },
+    {
+        id: 4,
+        image: brandImage.src,
+        brand: 'MSI',
+    }
+]
+
 interface Product {
     id: number;
     image: string;
@@ -13,7 +43,7 @@ interface Product {
 export const products: Product[] = [
     {
         id: 1,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -24,7 +54,7 @@ export const products: Product[] = [
     },
     {
         id: 2,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -35,7 +65,7 @@ export const products: Product[] = [
     },
     {
         id: 3,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -46,7 +76,7 @@ export const products: Product[] = [
     },
     {
         id: 4,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -57,7 +87,7 @@ export const products: Product[] = [
     },
     {
         id: 5,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -68,7 +98,7 @@ export const products: Product[] = [
     },
     {
         id: 6,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -79,7 +109,7 @@ export const products: Product[] = [
     },
     {
         id: 7,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
@@ -90,7 +120,7 @@ export const products: Product[] = [
     },
     {
         id: 8,
-        image: image.src,
+        image: productImage.src,
         brand: 'MSI',
         name: 'Nvidia RTX 4090',
         size: '24GB',
