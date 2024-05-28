@@ -1,11 +1,11 @@
 "use client";
-import ProductCard from "@/components/product-card";
-import { Question, WhyGraphicCards } from "@/bin/questions";
-import Image from "next/image";
+
 import Link from "next/link";
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+import ProductCard from "@/components/product-card";
+
+import { Question, WhyGraphicCards } from "@/bin/questions";
 
 
 import homePageCardImage from '../public/images/home-page-card.svg'
@@ -22,7 +22,6 @@ export default function Home() {
   return (
     <div className="max-w-screen-2xl 2xl:mx-auto mx-8 py-12">
       {/* top frame */}
-
       <Card className=" border-none">
         <CardContent className="bg-[#28282d]  rounded-3xl pt-6">
           <div className="flex justify-between items-center ">
@@ -61,9 +60,7 @@ export default function Home() {
         </button>
       </div>
       <div 
-      className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8"
-      // className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center"
-      >
+      className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8">
         {brands.map((brand) => (
           <ProductCard
             id={brand.id}
@@ -87,9 +84,7 @@ export default function Home() {
       </div>
       <div className="text-3xl  font-bold">Laatste dalingen</div>
       <div
-        className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8"
-        // className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
-      >
+        className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8">
         {products.map((product, index) => (
           <>
             {index !== 5 && (
@@ -136,20 +131,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-{/* <ProductCard
-        id={product.id}
-        image={product.image}
-        brand={product.brand}
-        name={product.name}
-        size={product.size}
-        description={product.description}
-        price={product.price}
-        discount={product.discount}
-        deliveryTime={product.deliveryTime}
-        isLastDrop={product.isLastDrop}
-        isLowestPrice={product.isLowestPrice}
-        isFavorite={product.isFavorite}
-        showType={ProductCardShow.full}
-      /> */}

@@ -1,5 +1,7 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
 import {
   Accordion,
   AccordionContent,
@@ -7,12 +9,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-
-
-import { MerkenItems, SeriesItems, WinkelsItems, AppItems, Item } from "@/bin/footer-items";
-import Link from "next/link";
 import logo from '../public/icons/logo.svg'
-
+import { MerkenItems, SeriesItems, WinkelsItems, AppItems, Item } from "@/bin/footer-items";
 
 function Footer() {
   return (

@@ -13,10 +13,6 @@ import favIcon from '../public/icons/fav.svg'
 import arrow from '../public/icons/arrow.svg'
 import shipping from '../public/icons/shipping.svg'
 import { ProductCardShow } from '@/lib/enums/product-card-show'
-import { title } from 'process'
-import { MoveUpRight, Truck } from 'lucide-react'
-
-
 
 type Props = {
     id: number
@@ -86,8 +82,6 @@ function ProductCard({ id, image, brand, name, size, description, price, discoun
                                     {showType === ProductCardShow.full ? 'Aanbieding bekijken' : showType === ProductCardShow.compare ? 'Vergelijken' : ''}
                                     <Image src={arrow} alt='arrowicon' width={10} height={10} />
                                 </Button>
-
-
                             </>
                         )}
                     </div>

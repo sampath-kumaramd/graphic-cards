@@ -1,11 +1,4 @@
 import React from 'react'
-import {
-    Card,
-    CardContent,
-} from "@/components/ui/card"
-
-
-
 
 function BlanckCard() {
     return (

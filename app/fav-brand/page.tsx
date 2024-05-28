@@ -1,14 +1,14 @@
-import { brands } from '@/bin/band-page'
-import ProductCard from '@/components/product-card'
-import { ProductCardShow } from '@/lib/enums/product-card-show'
 import React from 'react'
 
-export default function PopularBrandPage() {
+import ProductCard from '@/components/product-card'
+import { ProductCardShow } from '@/lib/enums/product-card-show'
 
+import { brands } from '@/bin/band-page'
+
+export default function PopularBrandPage() {
   return (
     <div className="max-w-screen-2xl 2xl:mx-auto mx-8 py-12 min-h-screen">
       <div className=" font-bold text-3xl">Populaire merken </div>
-
       <div className=' flex justify-start mt-4'>
         MSI, een toonaangevend merk in de wereld van gaming en computerhardware,
         staat bekend om zijn hoogwaardige grafische kaarten. Deze kaarten, ontworpen
@@ -31,7 +31,6 @@ export default function PopularBrandPage() {
           />
         ))}
       </div>
-
       <div className="my-20">
         <div>
           <div className="text-3xl font-bold mb-3">
@@ -49,7 +48,6 @@ export default function PopularBrandPage() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

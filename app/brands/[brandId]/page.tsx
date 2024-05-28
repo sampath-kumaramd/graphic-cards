@@ -1,15 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card";
-import MSIBrand from "../../../public/MSI-Brand.svg";
 import Image from "next/image";
+
+import { Card, CardContent } from "@/components/ui/card";
 import ProductCard from "@/components/product-card";
 import { ProductCardShow } from "@/lib/enums/product-card-show";
+
 import { products } from "@/bin/band-page";
+import MSIBrand from "../../../public/MSI-Brand.svg";
 
 export default function BrandPage() {
     return (
         <div className="max-w-screen-2xl 2xl:mx-auto mx-8 py-12 min-h-screen">
             <div className=" font-bold text-3xl">{'BRAND'} grafische kaarten  </div>
-
             <div className='xl:grid justify-between xl:grid-cols-12 gap-8 mt-8 xl:mb-16 mb-24 xl:h-60 flex flex-col' >
                 <div className="col-span-3 h-full">
                     <Card className="rounded-3xl h-full">
@@ -58,7 +59,6 @@ export default function BrandPage() {
                     ))}
                 </div>
             </div>
-
             <div className="my-20">
                 <div>
                     <div className="text-3xl font-bold mb-3">
@@ -74,15 +74,10 @@ export default function BrandPage() {
                         grafische kaarten een optimale gamingervaring. Daarnaast ondersteunt MSI regelmatig hun producten
                         met software-updates en gebruikersvriendelijke tools, wat bijdraagt aan hun reputatie als betrouwbare
                         keuze voor pc-enthousiastelingen wereldwijd.
-
-
                     </div>
                 </div>
             </div>
-
         </div>
-    )
-
-}
+    )}
 
 

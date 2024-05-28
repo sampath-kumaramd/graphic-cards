@@ -1,6 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
 import truckGreen from "@/public/icons/truck-green.svg";
 import FacebookIcon from '@/public/icons/facebook.svg';
 import TwitterIcon from '@/public/icons/twitter.svg';
@@ -85,7 +86,6 @@ export default function ProductPage() {
             <div className="text-5xl font-bold">€ 1200,-</div>
           </div>
           </div>
-
           <div className="h-auto border border-gray-300 rounded-3xl p-5 space-y-5 text-[#3C3C43] ">
             <div className="font-bold text-2xl text-center xl:text-left">Deel deze pagina</div>
             <div className="text-xl text-center xl:text-left">

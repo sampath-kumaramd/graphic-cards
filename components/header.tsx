@@ -1,27 +1,25 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
 import { Separator } from "./ui/separator";
-import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+
+import { Menu } from "lucide-react";
 import logo from '../public/icons/logo.svg'
 import search from '../public/icons/search.svg'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav>
       <div className="max-w-screen-2xl 2xl:mx-auto  mx-8 flex items-center justify-between py-5">
@@ -56,7 +54,6 @@ const Header = () => {
                       <Image src="./icons/logo.svg" alt="logo" width={20} height={20} />
                       <div className="font-bold text-xl">Grafischekaart.nl</div>
                     </div>
-
                   </SheetTitle>
                   <SheetDescription>
                     <div className="flex border border-gray-400 rounded-full w-full h-auto py-2 px-3 items-center gap-3 mt-8">
