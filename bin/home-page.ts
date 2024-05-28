@@ -26,6 +26,11 @@ export const brands: Brands[] = [
         id: 4,
         image: brandImage.src,
         brand: 'MSI',
+    },
+    {
+        id: 5,
+        image: brandImage.src,
+        brand: 'MSI',
     }
 ]
 
