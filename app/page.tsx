@@ -61,7 +61,7 @@ export default function Home() {
         </button>
       </div>
       <div 
-      className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
+      className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8"
       // className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center"
       >
         {brands.map((brand) => (
@@ -87,7 +87,7 @@ export default function Home() {
       </div>
       <div className="text-3xl  font-bold">Laatste dalingen</div>
       <div
-        className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
+        className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8"
         // className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8"
       >
         {products.map((product, index) => (
@@ -117,7 +117,7 @@ export default function Home() {
       </div>
 
       {/* questions related to why choose <brandName> ? */}
-      <div className="space-y-20 mb-20">
+      <div className="space-y-20 mb-20 mt-12">
         {WhyGraphicCards.map((item: Question) => {
           const CategoryComponent = () => (
             <div key={item.id}>

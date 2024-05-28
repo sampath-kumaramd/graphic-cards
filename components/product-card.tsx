@@ -59,10 +59,10 @@ function ProductCard({ id, image, brand, name, size, description, price, discoun
                             </button>
                         ) : (
                             <>
-                                <div className='text-left text-xl font-bold mt-1 mb-4'>
+                                <button className='text-left text-xl font-bold mt-1 mb-4' onClick={() => router.push(`products/${id}`)}>
                                     <div>{name}</div>
                                     <div>{size}</div>
-                                </div>
+                                </button>
                                 {
                                     description && <div className=' text-gray-500'>{description.substring(0, 50)} ... </div>
                                 }

@@ -19,7 +19,7 @@ export default function PopularBrandPage() {
         Daarnaast ondersteunt MSI regelmatig hun producten met software-updates en gebruikersvriendelijke tools,
         wat bijdraagt aan hun reputatie als betrouwbare keuze voor pc-enthousiastelingen wereldwijd.
       </div>
-      <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-24 xl:gap-8  items-center mt-8">
+      <div className=" grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full 2xl:gap-4 xl:gap-8  items-center mt-8">
         {brands.map((brand) => (
           <ProductCard
             id={brand.id}
