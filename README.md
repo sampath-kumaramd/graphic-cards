@@ -1,4 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Graphic Cards Shopping Center
+
+This is a Next.js project that serves as a comparison platform for graphic cards, allowing users to browse, compare, and find the best deals on various GPU models.
+
+## Project Overview
+
+The Shopping Center is a web application that helps users:
+
+- Browse popular graphic card brands
+- Compare prices across different retailers
+- View detailed product specifications
+- Find the lowest prices in both local and international markets
+- Learn about different graphic card models and their features
+
+## Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) with Radix UI primitives
+- **Language**: TypeScript
+- **Image Optimization**: Next.js Image component
+
+## Key Features
+
+- Responsive design that works across desktop and mobile devices
+- Product cards with detailed information
+- Price comparison across multiple retailers
+- Brand-specific pages with detailed information
+- Product detail pages with comprehensive specifications
+- International price comparison (Netherlands and Germany)
+- Latest price drops and deals
+
+## Project Structure
+
+- `/app`: Next.js app router pages and layouts
+- `/components`: Reusable UI components
+- `/bin`: Data files for products, brands, and other content
+- `/lib`: Utility functions and enums
+- `/public`: Static assets like images and icons
 
 ## Getting Started
 
@@ -16,21 +54,44 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Home**: Featured products, popular brands, and latest price drops
+- **Brand Pages**: Detailed information about specific graphic card brands
+- **Product Pages**: Comprehensive details about specific graphic card models with price comparisons
+- **Favorite Brands**: Overview of popular graphic card manufacturers
 
-## Learn More
+## Components
 
-To learn more about Next.js, take a look at the following resources:
+The project uses a component-based architecture with reusable UI elements:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `ProductCard`: Displays product information in various formats
+- `Header`: Navigation and search functionality
+- `Footer`: Site links and information
+- `Card`: Wrapper for content sections
+- Various UI components from shadcn/ui library
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Data Management
 
-## Deploy on Vercel
+Product and brand data is currently stored in static TypeScript files in the `/bin` directory. This includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Product specifications
+- Brand information
+- Price data from different retailers
+- Comparison information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+
+The application is configured for easy deployment on Vercel, the platform from the creators of Next.js.
+
+## Image Handling
+
+The project is configured to use external image domains (ibb.co) as well as local images in the public directory.
+
+## Customization
+
+The UI uses Tailwind CSS with a customized theme defined in `tailwind.config.ts` and CSS variables in `globals.css`.
+
+---
+
+Created by Sampath Kumara
